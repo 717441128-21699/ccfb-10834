@@ -1,0 +1,31 @@
+{
+  "name": "column-lineage-tracker",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "列级血缘追踪:Oracle/Hive SQL 解析、血缘图、影响分析、算法变更比对",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "eval": "vitest run tests/eval/lineage-eval.test.ts"
+  },
+  "dependencies": {
+    "cytoscape": "^3.30.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/cytoscape": "^3.21.7",
+    "@types/node": "^22.20.5",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vitest": "^2.1.8"
+  }
+}
